@@ -73,5 +73,5 @@ private filePath: string;
   // * BONUS TODO: Define a removeCity method that removes a city from the searchHistory.json file
   //async removeCity(id: string) {}
 }
-
+ // I do not have time sorry.
 export default new HistoryService();

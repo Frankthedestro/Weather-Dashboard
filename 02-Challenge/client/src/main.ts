@@ -28,14 +28,13 @@ const humidityEl: HTMLParagraphElement = document.getElementById(
   'humidity'
 ) as HTMLParagraphElement;
 
-/*
+const API_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:3001/api' 
+  : '/api';
 
-API Calls
-
-*/
 
 const fetchWeather = async (cityName: string) => {
-  const response = await fetch('/api/weather/', {
+  const response = await fetch(`${API_URL}/weather/`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
